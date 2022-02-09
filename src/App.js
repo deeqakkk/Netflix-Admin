@@ -13,29 +13,14 @@ export default function App() {
       <div className="container">
         <Sidebar />
         <Routes>
-          <Route exact path="/">
-            <Home />
+          <Route path="/" element={<Home/>}>
           </Route>
-          <Route path="/users">
-            <UserList />
+          <Route path="/users" element={<UserList/>}>
           </Route>
-          {/* <Route path="/user/:userId">
-            <User />
-          </Route>
-          <Route path="/newUser">
-            <NewUser />
-          </Route>
-          <Route path="/products">
-            <ProductList />
-          </Route>
-          <Route path="/product/:productId">
-            <Product />
-          </Route>
-          <Route path="/newproduct">
-            <NewProduct /> */}
-          {/* </Route> */}
         </Routes>
       </div>
+    
+ 
     </Router>
   );
 }
